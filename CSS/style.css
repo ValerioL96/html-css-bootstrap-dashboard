@@ -1,0 +1,15 @@
+
+body{
+    font-family: "roboto";
+}
+
+section#navbar{
+    height: 100px;
+    background-color: red;
+}
+
+section#folders{
+    height: calc(100vh - 100px);
+    width: 250px;
+    background-color: black;
+}
