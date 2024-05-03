@@ -8,14 +8,51 @@ body{
     color: transparent;
 }
 
-aside{
-    height: 100px;
-    width: 200px;
-    background-color: hsl(210deg 55% 15.69%);
-}
+
 
 main{
     height: 100px;
     width: calc(100% - 200px);
     background-color: hsl(214.54deg 81.67% 50.78%);
 }
+
+/*COSTUM ASIDE*/
+
+aside{
+    width: 200px;
+    color: white;
+}
+
+aside ul>li{
+    list-style-type: none;
+}
+
+/*style section#folders*/
+
+aside section#folders{
+    background-color: hsl(208.09deg 82.46% 11.18%);
+    padding: 1rem;
+}
+
+/*style section#settings*/
+
+aside section#settings{
+    background-color: hsl(209.33deg 56.96% 15.49%);
+    padding-top: 20rem;
+}
+
+/*@media screen and (max-width:600px) {
+    aside>div#text{
+        display: none;
+        color: transparent;
+    }
+
+    aside{
+        width: 50px;
+    }
+
+    main{
+        width: calc(100% - 50px);
+    }
+    
+} */
