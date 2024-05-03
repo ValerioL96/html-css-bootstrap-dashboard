@@ -3,25 +3,19 @@ body{
     font-family: "roboto";
 }
 
-section#navbar{
+.bg-trasparent{
+    background-color: transparent;
+    color: transparent;
+}
+
+aside{
     height: 100px;
+    width: 200px;
+    background-color: hsl(210deg 55% 15.69%);
 }
 
 main{
-    height: calc(100vh - 100px);
-}
-
-section#folders{
-    width: 200px;
-    background-color: black;
-    color: white;
-}
-
-section#folders ul>li{
-    list-style-type: none;
-}
-
-section#main{
+    height: 100px;
     width: calc(100% - 200px);
-    background-color: blue;
+    background-color: hsl(214.54deg 81.67% 50.78%);
 }
