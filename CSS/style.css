@@ -2,6 +2,7 @@
 body{
     font-family: "roboto";
     font-size: bolder;
+    height: 100vh;
 }
 
 .bg-trasparent{
@@ -9,7 +10,10 @@ body{
     color: transparent;
 }
 
+.offcanvas-width{
+    width: 60% !important;
 
+}
 
 main{
     height: 100px;
@@ -22,6 +26,8 @@ main{
 aside{
     width: 150px;
     color: white;
+    height: 100vh;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 aside ul>li{
@@ -31,16 +37,37 @@ aside ul>li{
 /*style section#folders*/
 
 aside section#folders{
-    background-color: hsl(208.09deg 82.46% 11.18%);
+    
     padding: 1rem;
 }
 
 /*style section#settings*/
 
 aside section#settings{
-    background-color: hsl(209.33deg 56.96% 15.49%);
+    
     padding-top: 20rem;
 }
+
+
+/*COSTUM MAIN*/
+
+/*STUDENTS*/
+
+section#students{
+    color: white;
+    line-height: .8rem;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*@media screen and (max-width:600px) {
     aside>div#text{
@@ -57,3 +84,13 @@ aside section#settings{
     }
     
 } */
+@media screen and (max-width:600px) {
+    aside{
+        width: 50px;
+        height: 100vh;
+    }
+    #folders{
+        width: 50px;
+    }
+    
+}
