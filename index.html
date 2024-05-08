@@ -131,40 +131,80 @@
   
     <main>
 
-      <section id="students">
-        <div class="container">
-          <div class="row d-flex justify-content-between">
-            <div class="col-6"> 
-              <h3>Boolean</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+      <header class="d-flex flex-column flex-md-row justify-content-between p-2 py-4 px-md-4">
+        <article id="new-student" class="mb-4 order-md-2">
+          <p>Nuovo Studente</p>
+          <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            +
+          </button>
+          
+          <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="new-student-offcanvas-label">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-
-            <div class="col-3">
-              <p>Studenti online negli ultimi 30 minuti</p>
-              <h3>125</h3>
-            </div>
-
-            <div class="col-3 d-flex align-items-center">
-              <p class="pe-3">Nuovo Studenete</p>
-
-              <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">+</button>
-
-               <div class="offcanvas offcanvas-end offcanvas-width" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                  <div class="offcanvas-header">
-                     <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body"> 
-                      <p>Try scrolling the rest of the page to see this option in action.</p>
-                  </div>
-               </div>
-
-
+            <div class="offcanvas-body">
+              <div>
+                I will not close if you click outside of me.
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-  
+        </article>
+
+        <article id="plans" class="mb-4 order-md-0">
+          <p class="fs-1">
+            Boolean piano base
+          </p>
+          <p>
+            app >>
+          </p>
+        </article>
+
+        <article id="online-students" class="mb-4 order-md-1">
+          <p>Studenti online negli ultimi 30 minuti</p>
+          <p class="fs-1">
+            125
+          </p>
+        </article>
+      </header>
+
+      <div class="main-content container-fluid">
+        <article class="card">
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+
+   
     </main>
 
   </div>

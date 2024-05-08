@@ -18,7 +18,7 @@ body{
 main{
     height: 100px;
     width: calc(100% - 150px);
-    background-color: hsl(214.54deg 81.67% 50.78%);
+    
 }
 
 /*COSTUM ASIDE*/
@@ -53,14 +53,21 @@ aside section#settings{
 
 /*STUDENTS*/
 
-section#students{
+main> header{
+    background-color: hsl(214.54deg 81.67% 50.78%);
     color: white;
-    line-height: .8rem;
-    padding: 1rem;
 }
 
+#new-student-offcanvas-label{
+    width: 60%;
+}
 
+@media screen and (max-width:768px) {
+    #new-student-offcanvas-label{
+        width: 100%;
+    }
 
+}
 
 
 
